@@ -55,6 +55,12 @@ class RestaurantTest {
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<MENU>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //<<<<<<<<<<<<<<<<<<<<<<TOTAL ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>
-
+    @Test
+    public void total_order_value_should_be_equal_to_total_price_of_items_selected(){
+        List<String> itemNames = new ArrayList<String>();
+        itemNames.add("Sweet corn soup");
+        itemNames.add("Vegetable lasagne");
+        assertEquals(388,restaurant.totalOrderValue(itemNames));
+    }
     //<<<<<<<<<<<<<<<<<<<<<<TOTAL ORDER VALUE>>>>>>>>>>>>>>>>>>>>>>>>>
 }
